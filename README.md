@@ -14,4 +14,4 @@ List of features available
 
 ## Downloads
 
-[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It.png)](https://opencollective.com/yourls/backer/0/website)
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(1).png)](https://microsoftedge.microsoft.com/addons/detail/shorto-url-shorter/fblkkccdkgkcmjpbpldapdfelpflpkgp)
