@@ -14,4 +14,4 @@ List of features available
 
 ## Downloads
 
-[![](https://opencollective.com/yourls/backer/0/avatar.svg)](https://opencollective.com/yourls/backer/0/website)
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It.png)](https://opencollective.com/yourls/backer/0/website)
