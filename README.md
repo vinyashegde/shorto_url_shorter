@@ -20,3 +20,5 @@ List of features available
 ## Downloads
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(2).png)](https://microsoftedge.microsoft.com/addons/detail/shorto-url-shorter/fblkkccdkgkcmjpbpldapdfelpflpkgp)
+
+[![]https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(3).png)](https://addons.mozilla.org/en-US/firefox/addon/vinyas-hegde)
