@@ -24,6 +24,8 @@ List of features available
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(3).png)](https://addons.mozilla.org/en-US/firefox/addon/vinyas-hegde)
 
+[![]https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
+
 
 
 
