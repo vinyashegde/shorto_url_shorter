@@ -27,6 +27,10 @@ List of features available
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
 
 
+## Tools used
+
+[Spectre.css](https://picturepan2.github.io/spectre)
+
 
 ## Privacy Policy
 
