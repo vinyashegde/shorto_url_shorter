@@ -26,7 +26,7 @@ List of features available
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
 
-[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(5).png)](https://www.mediafire.com/folder/al1ygvoclvmr2/Chrome_Extension)
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(5).png)](https://download1334.mediafire.com/gom19faqktng/2twvivbb2yhdtgd/URL+Shortner+by+Vinyas.zip)
 
 
 ## Tools used
