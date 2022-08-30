@@ -19,16 +19,12 @@ List of features available
 
 ## Downloads
 
-<a href="https://twitter.com/vinyasvasant" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="vinyasvasant" height="30" width="40" /></a>
-
-<a align="right" href="https://twitter.com/vinyasvasant" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="vinyasvasant" height="30" width="40" /></a>
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(2).png)](https://microsoftedge.microsoft.com/addons/detail/shorto-url-shorter/fblkkccdkgkcmjpbpldapdfelpflpkgp)
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(3).png)](https://addons.mozilla.org/en-US/firefox/addon/vinyas-hegde)
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
-
 
 
 
