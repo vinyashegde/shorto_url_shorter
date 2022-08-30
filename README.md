@@ -29,7 +29,7 @@ List of features available
 
 ## Tools used
 
-[Spectre.css](https://picturepan2.github.io/spectre)
+[**Spectre.css**](https://picturepan2.github.io/spectre)
 
 
 ## Privacy Policy
