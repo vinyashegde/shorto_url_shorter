@@ -16,6 +16,21 @@ List of features available
 
 
 
+ ## Installation for Chrome only
+ 
+ Step 1:
+ 
+ ![](https://raw.githubusercontent.com/vinyashegde/Nakuls-Youtube/main/STep%201.png)
+ 
+ Step 2: Extract to your desired location
+ 
+ ![](https://raw.githubusercontent.com/vinyashegde/Nakuls-Youtube/main/Nakuls-Youtube-main.zip%209_9_2022%203_07_30%20AM.png)
+ 
+ Step 3:
+ 
+ [**Next Steps here...**](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/)
+
+
 
 ## Downloads
 
@@ -29,7 +44,9 @@ List of features available
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(5).png)](https://download1334.mediafire.com/gom19faqktng/2twvivbb2yhdtgd/URL+Shortner+by+Vinyas.zip)
 
 
-## Tools used
+## Languages and Tools Used
+
+HTML,CSS and Javascript
 
 [**Spectre.css**](https://picturepan2.github.io/spectre)
 
