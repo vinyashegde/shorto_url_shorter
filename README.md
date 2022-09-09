@@ -15,25 +15,9 @@ List of features available
 ✅  Automatic URL shorten on one click
 
 
-
- ## Installation for Chrome only
- 
- Step 1:
- 
- ![](https://raw.githubusercontent.com/vinyashegde/Nakuls-Youtube/main/STep%201.png)
- 
- Step 2: Extract to your desired location
- 
- ![](https://raw.githubusercontent.com/vinyashegde/Nakuls-Youtube/main/Nakuls-Youtube-main.zip%209_9_2022%203_07_30%20AM.png)
- 
- Step 3:
- 
- [**Next Steps here...**](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/)
-
-
-
 ## Downloads
 
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(6).png)](https://chrome.google.com/webstore/detail/shorto-url-shorter/ggjlafhmjnmepkkihggbbgiignajkjcl?hl=en-GB&authuser=0)
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(2).png)](https://microsoftedge.microsoft.com/addons/detail/shorto-url-shorter/fblkkccdkgkcmjpbpldapdfelpflpkgp)
 
