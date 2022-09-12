@@ -15,16 +15,24 @@ List of features available
 ✅  Automatic URL shorten on one click
 
 
-
-
 ## Downloads
 
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(6).png)](https://chrome.google.com/webstore/detail/shorto-url-shorter/ggjlafhmjnmepkkihggbbgiignajkjcl?hl=en-GB&authuser=0)
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(2).png)](https://microsoftedge.microsoft.com/addons/detail/shorto-url-shorter/fblkkccdkgkcmjpbpldapdfelpflpkgp)
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(3).png)](https://addons.mozilla.org/en-US/firefox/addon/vinyas-hegde)
 
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
 
+[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Get%20It%20(5).png)](https://download1334.mediafire.com/gom19faqktng/2twvivbb2yhdtgd/URL+Shortner+by+Vinyas.zip)
+
+
+## Languages and Tools Used
+
+HTML,CSS and Javascript
+
+[**Spectre.css**](https://picturepan2.github.io/spectre)
 
 
 ## Privacy Policy
