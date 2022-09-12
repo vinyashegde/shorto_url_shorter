@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="popup.js"></script>
     <link rel="stylesheet" href="spectre.min.css">
+    <link rel="stylesheet" href="spectre-exp.min.css">
+    <link rel="stylesheet" href="spectre-icons.min.css">
     <title>LetCode</title>
     <style>
         body {
@@ -20,6 +22,9 @@
             <div class="toast toast-error d-hide">
                 Invalid URL
             </div>
+            <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
+
+            </div>
             <div class="card-title h5">Shorto - URL Shorter</div>
             <div class="card-subtitle text-gray">Enter URL</div>
         </div>
@@ -31,7 +36,7 @@
         <div class="card-footer">
             <div class="loading d-hide"></div>
             <button class="btn btn-primary" id="shortURL">Create</button>
-            <div class="toast toast-success d-hide"></div>
+            <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
         </div>
     </div>
 

@@ -1,4 +1,5 @@
 let generateBtn = document.querySelector("#shortURL");
+let shortbut = document.querySelector("#shortbut");
 let api = document.querySelector("#myurl")
 let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
@@ -34,4 +35,11 @@ generateBtn.addEventListener('click', () => {
             toastError.classList.add('d-hide')
         }, 1500)
     }
+})
+
+shortbut.addEventListener('click', () => {
+
+    
+   
+
 })

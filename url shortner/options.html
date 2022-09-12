@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="spectre.min.css">
+    <link rel="stylesheet" href="spectre-exp.min.css">
+    <link rel="stylesheet" href="spectre-icons.min.css">
     <script defer src="option.js"></script>
     <title>LetCode</title>
+    <style>
+        body {
+            width: 320px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +23,12 @@
             <div class="toast toast-error d-hide">
                 Please enter valid API
             </div>
-            <div class="card-subtitle text-gray">Enter API key</div>
+            <div style="float:right;"><a href="popup.html">
+                <button class="btn btn-sm" class="btn btn-action" id="shortbut">
+                <i class="icon icon-arrow-right" id="shortback"></i></button></a>
+            </div>
+            <div class="card-title h5">Enter API key</div><br>
+            
         </div>
         <div class="card-body">
             <div class="form-group">

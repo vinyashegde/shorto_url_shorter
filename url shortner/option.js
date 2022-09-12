@@ -1,4 +1,5 @@
 let saveBtn = document.querySelector("#save");
+let backBtn = document.querySelector("#shortback");
 let api = document.querySelector("#myapi")
 let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
@@ -18,4 +19,8 @@ saveBtn.addEventListener('click', () => {
             toastError.classList.add('d-hide')
         }, 1500)
     }
+})
+
+backBtn.addEventListener('click', () => {
+    
 })
