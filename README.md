@@ -134,7 +134,7 @@ Now you are ready to help the project by opening a pull request means you now te
 
 <a  href  =  "https://github.com/vinyashegde/shorto_url_shorter/graphs/contributors">
 
-<img  src  =  "https://contrib.rocks/image?repo=HetviSoni/code-fraggers"/>
+<img  src  =  "https://contrib.rocks/image?repo=vinyashegde/shorto_url_shorter"/>
 
 </a>
 
