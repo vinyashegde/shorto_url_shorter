@@ -14,6 +14,8 @@ List of features available
 
 • Automatic URL shorten on one click
 
+• QR Code feature
+
 
 ## Downloads
 
