@@ -28,7 +28,9 @@ List of features available
 
 ## Languages and Tools Used
 
-HTML,CSS and Javascript
+HTML
+CSS
+Javascript
 
 [**Spectre.css**](https://picturepan2.github.io/spectre)
 
