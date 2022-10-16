@@ -6,13 +6,13 @@
 
 List of features available  
 
-✅  Custom Api key suppprt 
+• Custom Api key suppprt 
 
-✅  Simple  
+• Simple  
 
-✅  Small and easy to use  
+• Small and easy to use  
 
-✅  Automatic URL shorten on one click
+• Automatic URL shorten on one click
 
 
 ## Downloads
