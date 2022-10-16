@@ -49,10 +49,7 @@ Below you will find the process and workflow used to review and merge your chang
 
 ## Steps
 - Take a look at the Existing Issues or create your **own** Issues!
-- **Do have a look at design files : https://www.figma.com/file/jbHM5hTNpHikFhxmuFPZqM/CodeFraggersFinal?node-id=0%3A1 as we need to make the website as per the design only.**
-- Wait for the Issue to be assigned to you after which you can start working on it.
 - Note : Every change in this project should/must have an associated issue. 
-- Do not create any pull request without being assigned to any issue.
 - While creating pull request do remember to add screenshots of your work. Also link your pull request to the issue by `Closes #issue-number` .
 
 # Basics of Git and GitHub
