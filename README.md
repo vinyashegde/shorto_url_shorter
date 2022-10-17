@@ -1,6 +1,6 @@
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Source/logo.png)](https://chrome.google.com/webstore/detail/shorto-url-shorter/ggjlafhmjnmepkkihggbbgiignajkjcl?hl=en-GB&authuser=0)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A Chrome Extension which shortens your urls in one click with a QR code!
@@ -157,6 +157,15 @@ Information Collected By Third-Parties And Behavioral Advertising On Advertising
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://jakebolam.com"><img src="https://avatars.githubusercontent.com/u/3534236?v=4?s=100" width="100px;" alt="Jake Bolam"/><br /><sub><b>Jake Bolam</b></sub></a><br /><a href="#infra-jakebolam" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/vinyashegde/shorto_url_shorter/commits?author=jakebolam" title="Tests">⚠️</a> <a href="https://github.com/vinyashegde/shorto_url_shorter/commits?author=jakebolam" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/vinyashegde"><img src="https://avatars.githubusercontent.com/u/46837876?v=4?s=100" width="100px;" alt="Vinyas Hegde"/><br /><sub><b>Vinyas Hegde</b></sub></a><br /><a href="https://github.com/vinyashegde/shorto_url_shorter/commits?author=vinyashegde" title="Code">💻</a></td>
+      <td align="center"><a href="https://abinjohn.in/"><img src="https://avatars.githubusercontent.com/u/15942221?v=4?s=100" width="100px;" alt="Abin John"/><br /><sub><b>Abin John</b></sub></a><br /><a href="https://github.com/vinyashegde/shorto_url_shorter/commits?author=abinjohn123" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
