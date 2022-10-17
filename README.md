@@ -153,12 +153,3 @@ Other Technologies We may also collect and store information through our use of 
 Information Collected By Third-Parties And Behavioral Advertising On Advertising Services: We may also obtain information about you from third parties such as our authorized service providers, advertising companies, and other affiliates. In order to gather information about users who interact with their advertisements, these companies may use cookies to monitor clicks. On Third Party Sites, Services, And Applications. We correspond with advertisers, data management platform, and ad networks to customize online behavioral advertisements that are created to target users' interests. In order to deliver these advertisements, these third parties may and/or we may disclose to these third parties an identification number to be associated with your device's platform.
 
 ## Contributors :
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
