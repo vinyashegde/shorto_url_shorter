@@ -1,46 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/spectre.min.css">
-    <link rel="stylesheet" href="./style/spectre-exp.min.css">
-    <link rel="stylesheet" href="./style/spectre-icons.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/spectre.min.css" />
+    <link rel="stylesheet" href="./style/spectre-exp.min.css" />
+    <link rel="stylesheet" href="./style/spectre-icons.min.css" />
     <script defer src="option.js"></script>
     <title>LetCode</title>
     <style>
-        body {
-            width: 320px;
-        }
+      body {
+        width: 320px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-    <div class="card">
-        <div class="card-header">
-            <div class="toast toast-error d-hide">
-                Please enter valid API
+  <body>
+    <div class="card-box">
+        <div class="card">
+            <div class="card-header">
+              <div class="toast toast-error d-hide">Please enter valid API</div>
+              <div style="float: right">
+                <a href="popup.html">
+                  <button class="btn btn-sm" class="btn btn-action" id="shortbut">
+                    <i class="icon icon-arrow-right" id="shortback"></i></button
+                ></a>
+              </div>
+              <div class="card-title h5">Enter API key</div>
+              <br />
             </div>
-            <div style="float:right;"><a href="popup.html">
-                <button class="btn btn-sm" class="btn btn-action" id="shortbut">
-                <i class="icon icon-arrow-right" id="shortback"></i></button></a>
+            <div class="card-body">
+              <div class="form-group">
+                <input class="form-input" type="password" id="myapi" />
+              </div>
             </div>
-            <div class="card-title h5">Enter API key</div><br>
-            
-        </div>
-        <div class="card-body">
-            <div class="form-group">
-                <input class="form-input" type="password" id="myapi">
+            <div class="card-footer">
+              <button class="btn btn-primary" id="save">Save</button>
+              <div class="toast toast-success d-hide">Saved!</div>
             </div>
-        </div>
-        <div class="card-footer">
-            <button class="btn btn-primary" id="save">Save</button>
-            <div class="toast toast-success d-hide">Saved!</div>
-        </div>
-    </div>
-
-</body>
-
+          </div>
+    </d>
+  </body>
 </html>

@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./src/popup.js"></script>
-    <script src ="./src/qrcode.min.js"></script>
-    <link rel="stylesheet" href="./style/spectre.min.css">
-    <link rel="stylesheet" href="./style/spectre-exp.min.css">
-    <link rel="stylesheet" href="./style/spectre-icons.min.css">
+    <script src="./src/qrcode.min.js"></script>
+    <link rel="stylesheet" href="./style/spectre.min.css" />
+    <link rel="stylesheet" href="./style/spectre-exp.min.css" />
+    <link rel="stylesheet" href="./style/spectre-icons.min.css" />
     <title>LetCode</title>
     <style>
-        body {
-            width: 350px;
-            height: 200px;
-        }
+      body {
+        width: 350px;
+        height: 200px;
+      }
 
-        #qrcode {
-                width:50px;
-                height: 50px;
-                padding-left: 50px;
-                padding-top: 1px;
-                
-            }
+      #qrcode {
+        width: 50px;
+        height: 50px;
+        padding-left: 50px;
+        padding-top: 1px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="card">
+  <body>
+    <div class="card-box">
+      <div class="card">
         <div class="card-header">
-            <div class="toast toast-error d-hide">
-                Invalid URL
-            </div>
-            <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
-
-            </div>
-            <div class="card-title h5">Shorto - URL Shorter</div>
-            <div class="card-subtitle text-gray">Enter URL</div>
+          <div class="toast toast-error d-hide">Invalid URL</div>
+          <div style="float: right">
+            <a href="options.html"
+              ><button class="btn btn-sm" class="btn btn-action" id="shortbut">
+                <i class="icon icon-menu"></i></button
+            ></a>
+          </div>
+          <div class="card-title h5">Shorto - URL Shorter</div>
+          <div class="card-subtitle text-gray">Enter URL</div>
         </div>
         <div class="card-body">
-            <div class="form-group">
-                <input class="form-input" type="text" id="myurl">
-            </div>
+          <div class="form-group">
+            <input class="form-input" type="text" id="myurl" />
+          </div>
         </div>
         <div class="card-footer">
-            <div class="loading d-hide"></div>
-            <button class="btn btn-primary" id="shortURL">Create</button>
-        </div><br>
-        <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
-        <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
+          <div class="loading d-hide"></div>
+          <button class="btn btn-primary" id="shortURL">Create</button>
+        </div>
+        <br />
+        <div class="toast toast-success d-hide">
+          <button class="btn btn-clear float-right"></button>
+        </div>
+        <div
+          style="float: bottom"
+          class="toast toast-success d-hide"
+          id="copied"
+        >
+          Copied!
+        </div>
+      </div>
     </div>
 
-    <br><div id="qrcode"></div><br>
+    <br />
+    <div id="qrcode"></div>
+    <br />
     <div></div>
-
-</body>
-
+  </body>
 </html>
