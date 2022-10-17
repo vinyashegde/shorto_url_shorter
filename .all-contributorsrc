@@ -25,6 +25,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "abinjohn123",
+      "name": "Abin John",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15942221?v=4",
+      "profile": "https://abinjohn.in/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
