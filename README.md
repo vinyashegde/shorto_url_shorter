@@ -153,7 +153,7 @@ Information Collected By Third-Parties And Behavioral Advertising On Advertising
 
 <!-- Copy-paste in your Readme.md file -->
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+<a href = "https://github.com/vinyashegde/shorto_url_shorter/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo = vinyashegde/shorto_url_shorter"/>
 </a>
 
