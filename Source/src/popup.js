@@ -7,18 +7,28 @@ let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
 let loader = document.querySelector('.loading')
 const url = new URL("https://t.ly/api/v1/link/shorten");
-var qrcode = new QRCode(document.getElementById("qrcode"));
+const codeDiv = document.getElementById("qrcode")
+var qrcode = new QRCode(codeDiv);
 
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
 }
+
+function urlValidate(url) {
+    const regex =
+      /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
+    return regex.test(url);
+  }
+
+  
+
 generateBtn.addEventListener('click', () => {
 
     var copyText;
 
     
-    if (api.value) {
+    if (api.value && urlValidate(api.value)) {
         loader.classList.remove('d-hide')
         chrome.storage.local.get(['API'], function (result) {
             fetch(url, {
@@ -51,6 +61,7 @@ generateBtn.addEventListener('click', () => {
 
 
                     qrcode.makeCode(copyText);
+                    codeDiv.classList.remove('d-hide')
                     
                 })
                 .catch(err => { alert(err) })
