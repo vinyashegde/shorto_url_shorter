@@ -24,36 +24,43 @@
         #qrcode > img{
             height: 200px;
         }
+
+        .qr{
+            height: 260px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-header">
-            <div class="toast toast-error d-hide">
-                Invalid URL
+    <div >
+        <div class="card">
+            <div class="card-header">
+                <div class="toast toast-error d-hide">
+                    Invalid URL
+                </div>
+                <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
+    
+                </div>
+                <div class="card-title h5">Shorto - URL Shorter</div>
+                <div class="card-subtitle text-gray">Enter URL</div>
             </div>
-            <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
-
+            <div class="card-body">
+                <div class="form-group">
+                    <input class="form-input" type="text" id="myurl">
+                </div>
             </div>
-            <div class="card-title h5">Shorto - URL Shorter</div>
-            <div class="card-subtitle text-gray">Enter URL</div>
+            <div class="card-footer">
+                <div class="loading d-hide"></div>
+                <button class="btn btn-primary" id="shortURL">Create</button>
+            </div><br>
+            <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
+            <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
         </div>
-        <div class="card-body">
-            <div class="form-group">
-                <input class="form-input" type="text" id="myurl">
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="loading d-hide"></div>
-            <button class="btn btn-primary" id="shortURL">Create</button>
-        </div><br>
-        <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
-        <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
+    
+        <div id="qrcode" class="qr d-hide"></div>
+        
     </div>
-
-    <br><div id="qrcode"></div><br>
-    <div></div>
+   
 
 </body>
 

@@ -7,7 +7,8 @@ let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
 let loader = document.querySelector('.loading')
 const url = new URL("https://t.ly/api/v1/link/shorten");
-var qrcode = new QRCode(document.getElementById("qrcode"));
+const codeDiv = document.getElementById("qrcode")
+var qrcode = new QRCode(codeDiv);
 
 let headers = {
     "Content-Type": "application/json",
@@ -21,6 +22,7 @@ function urlValidate(url) {
   }
 
   
+
 generateBtn.addEventListener('click', () => {
 
     var copyText;
@@ -59,6 +61,7 @@ generateBtn.addEventListener('click', () => {
 
 
                     qrcode.makeCode(copyText);
+                    codeDiv.classList.remove('d-hide')
                     
                 })
                 .catch(err => { alert(err) })
