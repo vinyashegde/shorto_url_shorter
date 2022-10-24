@@ -16,6 +16,7 @@
     },
     "manifest_version": 3,
     "permissions": [
-        "storage"
+        "storage",
+        "activeTab"
     ]
 }

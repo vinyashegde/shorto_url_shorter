@@ -1,4 +1,5 @@
 let generateBtn = document.querySelector("#shortURL");
+let generateSelTabBtn = document.querySelector("#shortSelTab");
 let shortbut = document.querySelector("#shortbut");
 let copyBtn = document.querySelector("#shortcopy");
 let copy = document.querySelector("#copied");
@@ -24,18 +25,24 @@ function urlValidate(url) {
   
 
 generateBtn.addEventListener('click', () => {
+    shortenUrl(api.value)
+})
+generateSelTabBtn.addEventListener('click', () => {
+    chrome.tabs.query({ active: true, lastFocusedWindow: true }).then(tab => {
+        tab = tab[0];
+        shortenUrl(tab.url)
+    })
+})
 
-    var copyText;
-
-    
-    if (api.value && urlValidate(api.value)) {
+function shortenUrl(longURL) {
+    if (longURL && urlValidate(longURL)) {
         loader.classList.remove('d-hide')
         chrome.storage.local.get(['API'], function (result) {
             fetch(url, {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify({
-                    "long_url": api.value,
+                    "long_url": longURL, 
                     "domain": "https://t.ly/",
                     "api_token": result.API
                 })
@@ -50,7 +57,7 @@ generateBtn.addEventListener('click', () => {
                         copy.classList.add('d-hide')
                     }, 2000)
 
-                    copyText=json.short_url;
+                    const copyText=json.short_url;
 
                     var dummy = document.createElement("textarea");
                     document.body.appendChild(dummy);
@@ -73,7 +80,7 @@ generateBtn.addEventListener('click', () => {
             toastError.classList.add('d-hide')
         }, 1500)
     }
-})
+}
 
 backBtn.addEventListener('click', () => {
     
