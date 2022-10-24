@@ -23,6 +23,8 @@ List of features available
 
 • QR Code feature
 
+• Selected tab link copy button
+
 
 ## Downloads
 
