@@ -25,6 +25,9 @@ List of features available
 
 • Selected tab link copy button
 
+• Invoke the extension using keyboard shortcuts - `Ctrl+Shift+S` on Windows and `Command+Shift+S` on Mac
+
+
 
 ## Downloads
 
