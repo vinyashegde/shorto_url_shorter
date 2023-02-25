@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="./style/spectre.min.css">
     <link rel="stylesheet" href="./style/spectre-exp.min.css">
     <link rel="stylesheet" href="./style/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shorto</title>
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        
         body {
             width: 350px;
-            height: 200px;
+            height: 500px;
+            font-family: 'Poppins', sans-serif;
         }
 
         #qrcode {
@@ -28,6 +32,85 @@
         .qr{
             height: 260px;
         }
+        
+        .card-header{
+            background-color: #C8D4FF;
+            width: 407.5px;
+            height: 52px;
+            border: 2px solid black; 
+            border-radius: 12px;
+        }
+        
+        .card-title{
+            font-size: 1rem;
+            font-weight: 580;
+            margin-bottom: 15px;
+            color: #000F46;
+        }
+
+        .card-body{
+            width: 409px;
+            margin-top: 20px;
+        }
+
+        .card{
+            width: 409px;
+            border-radius: 12px;
+            border: 2px solid black; 
+        }
+
+        .card-footer{
+            width:409px;
+            margin-top: 5px;
+        }
+
+        .form-input {
+           color: black;
+           border-radius: 15px;
+           margin-top: 5px;
+           background-color: #C8D4FF;
+           border: 1.5px solid black;
+        }
+        .form-input:focus {
+          border-color: #000F46;
+        }
+        .btn.btn-primary {
+        background: #172A8C;
+        border-color: #000000;
+        color: #fff;
+        }
+       
+        .btn.btn-primary:hover, .btn.btn-primary:focus {
+        background: #C8D4FF;
+        border-color: #000000;
+        color: #172A8C;
+        transition: 0.3s ease-in;
+        
+        }
+
+        #shortSelTab{
+            border-radius: 13px;
+            padding: 7px 21px;
+            margin-left: 9px;
+        }
+        #shortURL{
+            border-radius: 13px; 
+            padding: 7px 38px;
+        }
+        #darkmode{
+            color: #000F46;
+        }
+        #shortbut{
+            color: #000F46;
+        }
+        #darkmode:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
+        #shortbut:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
     </style>
 </head>
 
@@ -38,11 +121,12 @@
                 <div class="toast toast-error d-hide">
                     Invalid URL
                 </div>
-                <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
+                <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="darkmode"><i class="fa-solid fa-moon"></i></button></a>
+                <a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
     
                 </div>
-                <div class="card-title h5">Shorto - URL Shorter</div>
-                <div>
+                <div class="card-title">Shorto - URL Shorter</div>
+                <div class="git-star">
                      <iframe src="https://ghbtns.com/github-btn.html?user=vinyashegde&repo=shorto_url_shorter&type=star&count=true" frameborder="0" scrolling="0" width="120" height="20" title="GitHub"></iframe>           
             </div>
         </div>
@@ -53,8 +137,8 @@
             </div>
             <div class="card-footer">
                 <div class="loading d-hide"></div>
-                <button class="btn btn-primary" id="shortURL">Create</button>
-                <button class="btn btn-primary" id="shortSelTab">Create from selected tab</button>
+                <button class="btn btn-primary" id="shortURL">Shorten</button>
+                <button class="btn btn-primary" id="shortSelTab">Shorten Current Tab</button>
             </div><br>
             <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
             <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
