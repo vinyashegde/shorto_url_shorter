@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./src/popup.js"></script>
     <script src ="./src/qrcode.min.js"></script>
+    <script src ="./src/FileSaver.js"></script>
     <link rel="stylesheet" href="./style/spectre.min.css">
     <link rel="stylesheet" href="./style/spectre-exp.min.css">
     <link rel="stylesheet" href="./style/spectre-icons.min.css">
@@ -16,8 +17,10 @@
         
         body {
             width: 350px;
+
             height: 500px;
             font-family: 'Poppins', sans-serif;
+
         }
 
         #qrcode {
@@ -142,8 +145,14 @@
             </div><br>
             <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
             <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
+            <div style="float:bottom;" class="toast toast-success d-hide" id="copiedQr">Copied QR!</div>
+            <div style="float:bottom;" class="toast toast-success d-hide" id="downloadedQr">Downloading QR!</div>
         </div>
-    
+        <!-- Option to Copy or Download QR code to clipboard -->
+        <div class="px-2 m-2" >
+            <button class="btn btn-primary d-hide " id="copyQr">Copy QR</button>
+            <button class="btn btn-primary d-hide " id="downloadQr">Download QR</button>
+        </div>
         <div id="qrcode" class="qr d-hide"></div>
         
     </div>
