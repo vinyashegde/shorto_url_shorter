@@ -3,12 +3,16 @@ let generateSelTabBtn = document.querySelector("#shortSelTab");
 let shortbut = document.querySelector("#shortbut");
 let copyBtn = document.querySelector("#shortcopy");
 let copy = document.querySelector("#copied");
+let copiedQr = document.querySelector("#copiedQr");
+let downloadedQr = document.querySelector("#downloadedQr");
 let api = document.querySelector("#myurl")
 let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
 let loader = document.querySelector('.loading')
 const url = new URL("https://t.ly/api/v1/link/shorten");
 const codeDiv = document.getElementById("qrcode")
+const copyQr = document.getElementById("copyQr")
+const downloadQr = document.getElementById("downloadQr")
 var qrcode = new QRCode(codeDiv);
 
 let headers = {
@@ -69,6 +73,8 @@ function shortenUrl(longURL) {
 
                     qrcode.makeCode(copyText);
                     codeDiv.classList.remove('d-hide')
+                    downloadQr.classList.remove('d-hide')
+                    copyQr.classList.remove('d-hide')
                     
                 })
                 .catch(err => { alert(err) })
@@ -82,8 +88,52 @@ function shortenUrl(longURL) {
     }
 }
 
+
+// Function to COPY QR to clipboard
+copyQr.addEventListener('click',()=>{
+    copyQrfunc();
+})
+
+async function copyQrfunc(){
+    const imgQr= document.querySelector('div.qr img')
+    const data=await fetch(imgQr.src);
+    const blob = await data.blob();
+    
+    try{
+        await navigator.clipboard.write([
+            new ClipboardItem({
+                [blob.type]:blob,
+            })
+        ])
+        console.log('success');
+        copiedQr.classList.remove('d-hide')
+        setTimeout(() => {
+            copiedQr.classList.add('d-hide')
+        }, 2000)
+    } catch(e){
+        alert(e);
+    }
+}
+
+// Function to download QR
+downloadQr.addEventListener('click',()=>{
+    const imgQr= document.querySelector('div.qr img')
+    let imgPath=imgQr.getAttribute('src');
+    console.log('1')
+    try{
+        const filename=imgPath.substring(imgPath.lastIndexOf('/')+1);
+        saveAs(imgPath, filename);
+        downloadedQr.classList.remove('d-hide')
+        setTimeout(() => {
+            downloadedQr.classList.add('d-hide')
+        }, 2000)
+    } catch(e){
+        alert(e);
+    }
+})
+
+
 backBtn.addEventListener('click', () => {
     
 })
-
 
