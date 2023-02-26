@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/spectre.min.css">
+    <link rel="stylesheet" href="./style/spectre-exp.min.css">
+    <link rel="stylesheet" href="./style/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shorto</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card-header{
+            background-color: #C8D4FF;
+            width: 407.5px;
+            height: 52px;
+            border: 2px solid black; 
+            border-radius: 12px;
+        }
+        .card{
+            width: 409px;
+            border-radius: 12px;
+            border: 2px solid black; 
+        }
+        .card-title{
+            font-size: large;
+            font-weight: 550;
+            color: #000F46;
+        }
+        #right-arrow{
+            color: #000F46;
+        }
+        #right-arrow:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
+
+        
+      th, td{
+         border:1.8px solid #000F46;
+         padding: 20px;
+      }
+
+      .card-body{
+        display: flex;
+        flex-direction: row;
+      }
+      .delete-icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5px;
+      }
+      .fa-trash-can{
+        color: #000F46;
+        margin-top: 25px;
+        font-size: larger;
+        cursor: pointer;
+      }
+      #del-icon1{
+        margin-top: -5px;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="right-arrow"><i class="icon icon-arrow-right"></i></button></a>
+            </div>
+            <div class="card-title">Recent URLs</div>   
+    </div>
+    <div class="card-body">
+        <table style="width: 100%">
+           <tr>
+               <td></td>
+               <td></td>
+            </tr>
+       
+            <tr>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+
+         <div class="delete-icons">
+            <i class="fa-solid fa-trash-can" id="del-icon1"></i>
+            <i class="fa-solid fa-trash-can"></i>
+            <i class="fa-solid fa-trash-can"></i>
+         </div>
+    </div>
+    </div>
+</body>
+</html>
