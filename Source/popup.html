@@ -29,10 +29,25 @@
         .qr{
             height: 260px;
         }
+        .img-history{
+          width: 80%;
+          height: 80%;
+        }
+        table,th, td{
+            border:1px solid black;
+            border-collapse:collapse;
+            padding: 8px;
+            margin-top:5px;
+            margin-left: 10px;
+            margin-bottom: 8px;
+        }
+        .font_insider{
+            font-size:12px;
+        }
     </style>
 </head>
 
-<body>
+<boddiv>
     <div >
         <div class="card">
             <div class="card-header">
@@ -52,10 +67,12 @@
                     <input class="form-input" type="text" id="myurl"placeholder="Enter URL">
                 </div>
             </div>
-            <div class="card-footer">
-                <div class="loading d-hide"></div>
+            <div class="card-footer d-flex">
+                <div class="loading d-hide my-2"></div>
                 <button class="btn btn-primary" id="shortURL">Create</button>
-                <button class="btn btn-primary" id="shortSelTab">Create from selected tab</button>
+                <button class="btn btn-primary mx-2" id="shortSelTab">Create from selected tab</button>
+                <div id="result"></div>
+                <div style="float:right;" class="history-btn"><a href="history.html"><button id="history-btn"><img src="history 1.png" alt="history-button-pic" class="img-history"></button></a></div>
             </div><br>
             <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
             <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
@@ -67,11 +84,24 @@
             <button class="btn btn-primary d-hide " id="copyQr">Copy QR</button>
             <button class="btn btn-primary d-hide " id="downloadQr">Download QR</button>
         </div>
+        
         <div id="qrcode" class="qr d-hide"></div>
+
         
     </div>
-   
-
+    <!-- <div id="result"></div>
+    <table id="history-table" class="width:100%">
+        <thead class="font_insider">
+            <tr>
+            <th>Short URL</th>
+            <th>Original URL</th>
+            </tr>
+        </thead>
+            <tbody id="history-body">
+        </tbody>
+    </table>
+    </div> -->
+    
 </body>
 
 </html>

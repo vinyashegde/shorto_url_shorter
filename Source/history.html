@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./src/popup.js"></script>
+    <script src ="./src/qrcode.min.js"></script>
+    <script src ="./src/FileSaver.js"></script>
+    <link rel="stylesheet" href="./style/spectre.min.css">
+    <link rel="stylesheet" href="./style/spectre-exp.min.css">
+    <link rel="stylesheet" href="./style/spectre-icons.min.css">
+    <style>
+      body {
+          width: 350px;
+          min-height: 200px;
+      }
+      .clear_btn{
+        margin-top: 15px;
+        margin-left: 8px;
+      }
+      table,th, td{
+        border:1px solid black;
+        border-collapse:collapse;
+        padding: 8px;
+        margin-top:5px;
+        margin-left: 8px;
+      }
+      .small{
+        width: 90px;
+      }
+      .font_insider{
+        font-size:12px;
+      }
+  </style>
+    <title>History</title>
+</head>
+  <body>
+
+    <div >
+        <div class="card">
+            <div class="card-header">
+
+               <div style="float:right;"><a href="popup.html">
+                    <button class="btn btn-sm" class="btn btn-action" id="shortbut">
+                    <i class="icon icon-arrow-right" id="shortback"></i></button></a>
+                </div>
+                <div class="card-title h5">Recent URLs</div><br>
+                <table id="history-table" class="font_insider">
+                  <thead>
+                    <tr>
+                      <th>Long URL</th>
+                      <th>Short URL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+                <button id="clear-history-button" class="clear_btn btn btn-primary btn-sm input-group-btn">Clear History</button>
+                <script src="src/history.js"></script>
+            </div>
+        </div>
+    </div>
+    
+
+  </body>
+</html>
