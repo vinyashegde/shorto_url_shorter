@@ -10,11 +10,23 @@
     <link rel="stylesheet" href="./style/spectre.min.css">
     <link rel="stylesheet" href="./style/spectre-exp.min.css">
     <link rel="stylesheet" href="./style/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shorto</title>
     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        :root{
+            --primary-color:#C8D4FF;
+            --secondary-color:#000F46;
+        }
+        .dark-theme{
+            --primary-color:#E8EBF5;
+            --bg-color:#000623;
+            --secondary-color:#000000;
+        }
         body {
             width: 350px;
             min-height: 200px;
+            font-family: 'Poppins', sans-serif;
         }
 
         #qrcode {
@@ -29,6 +41,81 @@
         .qr{
             height: 260px;
         }
+
+        .card-header{
+            background-color: #C8D4FF;
+            border: 2px solid black; 
+            border-radius: 12px;
+            margin-bottom: 7px;
+        }
+
+        .card-title{
+            font-size: 1rem;
+            font-weight: 580;
+            margin-top: -3px;
+            margin-bottom: 9px;
+            color: #000F46;
+        }
+
+        .form-input {
+           color: black;
+           border-radius: 15px;
+           margin-top: 5px;
+           background-color: #C8D4FF;
+           border: 1.5px solid black;
+        }
+        .form-input:focus {
+          border-color: #000F46;
+        }
+        .btn.btn-primary {
+        background: #172A8C;
+        border-color: #000000;
+        color: #fff;
+        }
+        .btn.btn-primary:hover, .btn.btn-primary:focus {
+        background: #C8D4FF;
+        border-color: #000000;
+        color: #172A8C;
+        transition: 0.3s ease-in;
+        }
+        #shortSelTab{
+            border-radius: 10px;
+            padding: 1px 8px;
+        }
+        #shortURL{
+            border-radius: 10px; 
+            padding: 1px 5px;
+        }
+        #darkmode{
+            color: #000F46;
+        }
+        #shortbut{
+            color: #000F46;
+        }
+        #darkmode:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
+        #shortbut:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
+        #history{
+            cursor: pointer;
+            font-size: 18px;
+            color: #000F46;
+            margin-left: 2px;
+        }
+        #github-icon{
+            margin-bottom: -10px;
+            margin-left: 10px;
+        }
+        #downloadQr{
+            border-radius: 10px;
+        }
+        #copyQr{
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -39,14 +126,14 @@
                 <div class="toast toast-error d-hide">
                     Invalid URL
                 </div>
-                <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
-    
+                <div style="float:right;"><a href="#"><button class="btn btn-sm" class="btn btn-action" id="darkmode"><i class="fa-solid fa-moon"></i></button></a>
+                <a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
                 </div>
-                <div class="card-title h5">Shorto - URL Shorter</div>
+                <div class="card-title h5">Shorto - URL Shorter</div>   </div>
                 <div>
-                     <iframe src="https://ghbtns.com/github-btn.html?user=vinyashegde&repo=shorto_url_shorter&type=star&count=true" frameborder="0" scrolling="0" width="120" height="20" title="GitHub"></iframe>           
+                     <iframe src="https://ghbtns.com/github-btn.html?user=vinyashegde&repo=shorto_url_shorter&type=star&count=true" frameborder="0" scrolling="0" width="120" height="20" title="GitHub" id="github-icon"></iframe>           
             </div>
-        </div>
+     
             <div class="card-body">
                 <div class="form-group">
                     <input class="form-input" type="text" id="myurl"placeholder="Enter URL">
@@ -56,6 +143,7 @@
                 <div class="loading d-hide"></div>
                 <button class="btn btn-primary" id="shortURL">Create</button>
                 <button class="btn btn-primary" id="shortSelTab">Create from selected tab</button>
+                <a href="recenturl.html"><i class="fa-solid fa-clock-rotate-left" id="history"></i></a>
             </div><br>
             <div class="toast toast-success d-hide"><button class="btn btn-clear float-right"></button></div>
             <div style="float:bottom;" class="toast toast-success d-hide" id="copied">Copied!</div>
