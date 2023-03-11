@@ -13,57 +13,89 @@
     <link rel="stylesheet" href="./style/spectre-exp.min.css">
     <link rel="stylesheet" href="./style/spectre-icons.min.css">
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        
       body {
-          width: 350px;
-          min-height: 200px;
+            font-family: 'Poppins', sans-serif;
+            width: 435px;
+      }
+      .card-header{
+
+            margin: 10px 10px 7px 10px;
+            background-color: #C8D4FF;
+            height: 52px;
+            border: 2px solid black; 
+            border-radius: 12px;
+            justify-content: center;
+            text-align: center;
+      }
+      .card{
+            /* margin-left: 15px; */
+            /* width: 409px; */
+            /* border-radius: 12px; */
+            /* border: 2px solid black;  */
+      }
+      .card-title{
+            font-size: large;
+            font-weight: 550;
+            color: #000F46;
+      }
+      .card-body{
+        margin-left: 21px;
       }
       .clear_btn{
         margin-top: 15px;
-        margin-left: 8px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        border-radius: 6px;
       }
+
       table,th, td{
         border:1px solid black;
         border-collapse:collapse;
         padding: 8px;
         margin-top:5px;
-        margin-left: 8px;
+        margin-left: 3px;
       }
       .small{
         width: 90px;
       }
       .font_insider{
-        font-size:12px;
+        font-size:13px;
+      }
+      .space {
+        height: 20px;
       }
   </style>
     <title>History</title>
 </head>
   <body>
 
-    <div >
-        <div class="card">
-            <div class="card-header">
-
-               <div style="float:right;"><a href="popup.html">
-                    <button class="btn btn-sm" class="btn btn-action" id="shortbut">
-                    <i class="icon icon-arrow-right" id="shortback"></i></button></a>
-                </div>
-                <div class="card-title h5">Recent URLs</div><br>
-                <table id="history-table" class="font_insider">
-                  <thead>
-                    <tr>
-                      <th>Long URL</th>
-                      <th>Short URL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
-                <button id="clear-history-button" class="clear_btn btn btn-primary btn-sm input-group-btn">Clear History</button>
-                <script src="src/history.js"></script>
+    <div class="card d-flex">
+        <div class="card-header">
+            <div style="float:right;"><a href="popup.html">
+                <button class="btn btn-sm" class="btn btn-action" id="shortbut">
+                <i class="icon icon-arrow-right" id="shortback"></i></button></a>
             </div>
+            <div class="card-title">Recent URLs</div>
         </div>
     </div>
-    
+    <div class="space"></div>
+    <div class="card-body">
+        <table id="history-table" class="font_insider">
+          <thead>
+              <tr>
+              <th>Long URL</th>
+              <th>Short URL</th>
+              </tr>
+              </thead>
+              <tbody>
+              </tbody>
+              </table>
+              <button id="clear-history-button" class="clear_btn btn btn-primary btn-sm input-group-btn">Clear History</button>
+              
+    </div>
+    <script src="src/history.js"></script>
 
   </body>
 </html>
