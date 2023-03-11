@@ -15,6 +15,14 @@ const copyQr = document.getElementById("copyQr")
 const downloadQr = document.getElementById("downloadQr")
 var qrcode = new QRCode(codeDiv);
 
+
+const resultDiv = document.getElementById('result');
+const historyBtn = document.getElementById('history-btn');
+const storageKey = 'shortenedUrls';
+
+// Retrieve the shortened URLs from local storage
+let shortenedUrls = JSON.parse(localStorage.getItem(storageKey)) || [];
+
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
@@ -37,6 +45,14 @@ generateSelTabBtn.addEventListener('click', () => {
         shortenUrl(tab.url)
     })
 })
+
+// Display the shortened URLs in the history table
+      
+shortenedUrls.slice(-3).reverse().forEach(urlPair => {
+    const row = document.createElement('tr');
+    row.innerHTML = `<td><a href="${urlPair[1]}" target="_blank">${urlPair[1]}</a></td><td><a href="${urlPair[0]}" target="_blank">${urlPair[0].substring(0,22) + String("...")}</a></td>`;
+    historyBody.appendChild(row);
+  });
 
 function shortenUrl(longURL) {
     if (longURL && urlValidate(longURL)) {
@@ -70,7 +86,14 @@ function shortenUrl(longURL) {
                     document.execCommand("copy");
                     document.body.removeChild(dummy);
 
+                    
+                    // Add the shortened URL to the history list and local storage
+                    const urlPair = [longURL, json.short_url];
+                    shortenedUrls.push(urlPair);
+                    shortenedUrls = shortenedUrls.slice(-3).reverse();
+                    localStorage.setItem(storageKey, JSON.stringify(shortenedUrls));
 
+                    
                     qrcode.makeCode(copyText);
                     codeDiv.classList.remove('d-hide')
                     downloadQr.classList.remove('d-hide')
@@ -87,7 +110,6 @@ function shortenUrl(longURL) {
         }, 1500)
     }
 }
-
 
 // Function to COPY QR to clipboard
 copyQr.addEventListener('click',()=>{
