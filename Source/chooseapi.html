@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/spectre.min.css">
+    <link rel="stylesheet" href="./style/spectre-exp.min.css">
+    <link rel="stylesheet" href="./style/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shorto</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .apis-button{
+            font-size: large;
+            margin: 5px;
+            background-color: #C8D4FF;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .card-header{
+            background-color: #C8D4FF;
+            width: 407.5px;
+            height: 52px;
+            border: 2px solid black; 
+            border-radius: 12px;
+        }
+        .card{
+            width: 409px;
+            border-radius: 12px;
+            border: 2px solid black; 
+        }
+        .buttons-row1{
+            display: flex;
+            flex-direction: row;
+            /* align-items: center; */
+            justify-content: space-around;
+        }
+        .buttons-row2{
+            display: flex;
+            flex-direction: row;
+            /* align-items: center; */
+            justify-content: space-around;
+        }
+        .card-title{
+            font-size: large;
+            font-weight: 550;
+            color: #000F46;
+        }
+        #random-btn{
+            padding: 3px 15px;
+        }
+        #bitly-btn{
+            padding: 3px 18px;
+        }
+        #tly-btn{
+            padding: 3px 33px;
+        }
+        #cuttly-btn{
+            padding: 3px 20px;
+        }
+        #right-arrow{
+            color: #000F46;
+        }
+        #right-arrow:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div style="float:right;"><a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="right-arrow"><i class="icon icon-arrow-right"></i></button></a>
+            </div>
+            <div class="card-title">Choose an API</div>   
+    </div>
+    <div class="card-body">
+       <div class="buttons-row1">   <button class="apis-button" id="random-btn">Random</button>
+        <button class="apis-button" id="bitly-btn">Bit.ly</button>   </div>
+       <div class="buttons-row2">   <button class="apis-button" id="tly-btn">T.ly</button>
+        <button class="apis-button" id="cuttly-btn">Cuttly</button>   </div>
+    </div>
+    </div>
+</body>
+</html>

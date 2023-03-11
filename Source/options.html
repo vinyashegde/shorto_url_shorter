@@ -10,14 +10,54 @@
     <script defer src="option.js"></script>
     <title>Shorto</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         body{
             width: 350px;
             height: 200px;
+            font-family: 'Poppins', sans-serif;
         }
         .card{
             height: 200px;
+            border-radius: 12px;
+            
         }
-       
+        .card-title{
+            font-size: 1rem;
+            font-weight: 580;
+            color: #000F46;
+        }
+        .form-input {
+           color: black;
+           border-radius: 15px;
+           background-color: #C8D4FF;
+           border: 2px solid black;
+           height: 45px;
+        }
+        .form-input:focus {
+          border-color: #000F46;
+        }
+        .btn.btn-primary {
+        background: #172A8C;
+        border-color: #000000;
+        color: #fff;
+        }
+        .btn.btn-primary:hover {
+        background: #C8D4FF;
+        border-color: #000000;
+        color: #172A8C;
+        transition: 0.3s ease-in;
+        }
+        #save{
+        border-radius: 13px; 
+        padding: 2px 20px;
+       }
+       #shortbut{
+            color: #000F46;
+        }
+        #shortbut:focus{
+            color: #fff;
+            background-color: #000F46;
+        }
     </style>
 </head>
 
