@@ -155,7 +155,5 @@ downloadQr.addEventListener('click',()=>{
 })
 
 
-backBtn.addEventListener('click', () => {
-    
-})
+//backBtn.addEventListener('click', () => {})
 
