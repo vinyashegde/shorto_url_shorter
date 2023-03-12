@@ -1,6 +1,6 @@
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Source/logo.png)](https://chrome.google.com/webstore/detail/shorto-url-shorter/ggjlafhmjnmepkkihggbbgiignajkjcl?hl=en-GB&authuser=0)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12+-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A open source Chrome Extension which shortens your urls in one click with a QR code!
@@ -12,7 +12,7 @@ Simply click on the extension icon, paste in a long URL, and the extension will 
 
  Create and share short links on one click  
  
-🔒Everything is safe - We don't ask for unnecessary permissions or track the users while using the extension)  
+🔒Everything is safe - We don't ask for unnecessary permissions or track the users while using the extension :) 
 
 List of features available  
 
