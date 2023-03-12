@@ -41,7 +41,7 @@ List of features available
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Readme/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
 
 
-## Languages and Frameworks Used
+## Languages and Libraries Used
 
 • HTML
 
@@ -50,6 +50,10 @@ List of features available
 • Javascript
 
 • [**Spectre.css**](https://picturepan2.github.io/spectre)
+
+• [**FileSaver.js**](https://github.com/eligrey/FileSaver.js)
+
+• [**qrcode.js**](https://davidshimjs.github.io/qrcodejs)
 
 # Contributing Guidelines
 
