@@ -18,13 +18,11 @@ List of features available
 
 • Custom API key Support 
 
-• Simple  
-
-• Small and easy to use  
+• Retrieve link with creation history
 
 • Automatic URL shorten on one click
 
-• QR Code feature
+• Create, Copy and Download QR Code
 
 • Selected tab link copy button
 
