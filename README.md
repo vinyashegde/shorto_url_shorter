@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A Chrome Extension which shortens your urls in one click with a QR code!
+A open source Chrome Extension which shortens your urls in one click with a QR code!
 
 This extension allows users to easily shorten long URLs when browsing the web.
 Simply click on the extension icon, paste in a long URL, and the extension will generate a shortened version that can be shared more easily. The shortened URL will also redirect to the original URL when clicked. This extension is useful for sharing links on social media or through messaging apps, where space is limited. It can also be used to obscure the original URL for privacy reasons. Overall, this extension offers a convenient way to streamline the process of sharing links online.
