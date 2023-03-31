@@ -154,6 +154,13 @@ downloadQr.addEventListener('click',()=>{
     }
 })
 
+const toggleButton = document.getElementById('dark-mode-toggle');
+const bodyElement = document.querySelector('body');
+
+toggleButton.addEventListener('click', () => {
+  bodyElement.classList.toggle('dark-mode');
+});
+
 
 //backBtn.addEventListener('click', () => {})
 
