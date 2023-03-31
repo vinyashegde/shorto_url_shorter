@@ -42,9 +42,13 @@
             height: 260px;
         }
 
+        .card{
+            background-color: #ffffff;
+        }
+
         .card-header{
             background-color: #C8D4FF;
-            border: 2px solid black; 
+            border: 1.5px solid black; 
             /* border-radius: 12px; */
             margin-bottom: 7px;
         }
@@ -54,7 +58,7 @@
             font-weight: 580;
             margin-top: -3px;
             margin-bottom: 9px;
-            color: #000F46;
+            color: #000000;
         }
 
         .form-input {
@@ -86,16 +90,11 @@
             border-radius: 10px; 
             padding: 1px 5px;
         }
-        #darkmode{
-            color: #000F46;
-        }
+        
         #shortbut{
             color: #000F46;
         }
-        #darkmode:focus{
-            color: #fff;
-            background-color: #000F46;
-        }
+        
         #shortbut:focus{
             color: #fff;
             background-color: #000F46;
@@ -116,6 +115,28 @@
         #copyQr{
             border-radius: 10px;
         }
+
+        .dark-mode {
+  
+}
+
+.dark-mode .card-header {
+  background-color: #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #000000;
+}
+
+.dark-mode .form-input {
+  background-color: #ffffff;
+}
+
+.dark-mode .btn.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+}
+
     </style>
 </head>
 
@@ -126,7 +147,7 @@
                 <div class="toast toast-error d-hide">
                     Invalid URL
                 </div>
-                <div style="float:right;"><a href="#"><button class="btn btn-sm" class="btn btn-action" id="darkmode"><i class="fa-solid fa-moon"></i></button></a>
+                <div style="float:right;"><a href="#"><button class="btn btn-sm" class="btn btn-action"  id="dark-mode-toggle"><i class="fa-solid fa-moon"></i></button></a>
                 <a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
                 </div>
                 <div class="card-title h5">Shorto - URL Shorter</div>   </div>
