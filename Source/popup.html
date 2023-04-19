@@ -116,6 +116,9 @@
         #copyQr{
             border-radius: 10px;
         }
+        #share{
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -126,7 +129,9 @@
                 <div class="toast toast-error d-hide">
                     Invalid URL
                 </div>
-                <div style="float:right;"><a href="#"><button class="btn btn-sm" class="btn btn-action" id="darkmode"><i class="fa-solid fa-moon"></i></button></a>
+                <div style="float:right;"><a href="#">
+                    <!-- <button class="btn btn-sm" class="btn btn-action" id="darkmode"><i class="fa-solid fa-moon"></i></button> -->
+                </a>
                 <a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
                 </div>
                 <div class="card-title h5">Shorto - URL Shorter</div>   </div>
@@ -151,11 +156,14 @@
             <div style="float:bottom;" class="toast toast-success d-hide" id="downloadedQr">Downloading QR!</div>
         </div>
         <!-- Option to Copy or Download QR code to clipboard -->
+        
+        <div id="qrcode" class="qr d-hide"></div>
+        
         <div class="px-2 m-2" >
+            <button class="btn btn-primary d-hide " id="share">Share</button>
             <button class="btn btn-primary d-hide " id="copyQr">Copy QR</button>
             <button class="btn btn-primary d-hide " id="downloadQr">Download QR</button>
         </div>
-        <div id="qrcode" class="qr d-hide"></div>
         
     </div>
    
