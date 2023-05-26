@@ -103,7 +103,7 @@ git remote add upstream https://github.com/vinyashegde/shorto_url_shorter.git
 git remote -v
 ```
 
-**6.** Always take a pull from the upstream repository to your main branch to keep it at par with the main project(updated repository). Feel free to raise new issues.
+**6.** Always take a pull from the upstream repository to your main branch to keep it as par with the main project(updated repository). Feel free to raise new issues.
 
 ```
 git pull upstream main
