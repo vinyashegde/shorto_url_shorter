@@ -21,13 +21,10 @@
       }
       .card-header{
 
-            margin: 10px 10px 7px 10px;
             background-color: #C8D4FF;
-            height: 52px;
             border: 2px solid black; 
-            border-radius: 12px;
-            justify-content: center;
-            text-align: center;
+            /* border-radius: 12px; */
+            /* margin-bottom: 7px; */
       }
       .card{
             /* margin-left: 15px; */
@@ -49,6 +46,18 @@
         margin-bottom: 20px;
         border-radius: 6px;
       }
+
+      .btn.btn-primary {
+        background: #172A8C;
+        border-color: #000000;
+        color: #fff;
+        }
+        .btn.btn-primary:hover, .btn.btn-primary:focus {
+        background: #C8D4FF;
+        border-color: #000000;
+        color: #172A8C;
+        transition: 0.3s ease-in;
+        }
 
       table,th, td{
         border:1px solid black;
@@ -95,7 +104,7 @@
               <button id="clear-history-button" class="clear_btn btn btn-primary btn-sm input-group-btn">Clear History</button>
               
     </div>
-    <script src="src/history.js"></script>
+    <script src="./src/history.js"></script>
 
   </body>
 </html>

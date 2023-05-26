@@ -5,6 +5,7 @@ let copyBtn = document.querySelector("#shortcopy");
 let copy = document.querySelector("#copied");
 let copiedQr = document.querySelector("#copiedQr");
 let downloadedQr = document.querySelector("#downloadedQr");
+let share = document.querySelector("#share");
 let api = document.querySelector("#myurl")
 let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
@@ -13,13 +14,14 @@ const url = new URL("https://t.ly/api/v1/link/shorten");
 const codeDiv = document.getElementById("qrcode")
 const copyQr = document.getElementById("copyQr")
 const downloadQr = document.getElementById("downloadQr")
+const sharer = document.getElementById("share")
 var qrcode = new QRCode(codeDiv);
 
 
 const resultDiv = document.getElementById('result');
 const historyBtn = document.getElementById('history-btn');
 const storageKey = 'shortenedUrls';
-
+var copyText;
 // Retrieve the shortened URLs from local storage
 let shortenedUrls = JSON.parse(localStorage.getItem(storageKey)) || [];
 
@@ -46,13 +48,13 @@ generateSelTabBtn.addEventListener('click', () => {
     })
 })
 
-// Display the shortened URLs in the history table
+// // Display the shortened URLs in the history table
       
-shortenedUrls.slice(-3).reverse().forEach(urlPair => {
-    const row = document.createElement('tr');
-    row.innerHTML = `<td><a href="${urlPair[1]}" target="_blank">${urlPair[1]}</a></td><td><a href="${urlPair[0]}" target="_blank">${urlPair[0].substring(0,22) + String("...")}</a></td>`;
-    historyBody.appendChild(row);
-  });
+// shortenedUrls.slice(-3).reverse().forEach(urlPair => {
+//     const row = document.createElement('tr');
+//     row.innerHTML = `<td><a href="${urlPair[1]}" target="_blank">${urlPair[1]}</a></td><td><a href="${urlPair[0]}" target="_blank">${urlPair[0].substring(0,22) + String("...")}</a></td>`;
+//     historyBody.appendChild(row);
+//   });
 
 function shortenUrl(longURL) {
     if (longURL && urlValidate(longURL)) {
@@ -77,7 +79,7 @@ function shortenUrl(longURL) {
                         copy.classList.add('d-hide')
                     }, 2000)
 
-                    const copyText=json.short_url;
+                    copyText=json.short_url;
 
                     var dummy = document.createElement("textarea");
                     document.body.appendChild(dummy);
@@ -98,6 +100,7 @@ function shortenUrl(longURL) {
                     codeDiv.classList.remove('d-hide')
                     downloadQr.classList.remove('d-hide')
                     copyQr.classList.remove('d-hide')
+                    share.classList.remove('d-hide')
                     
                 })
                 .catch(err => { alert(err) })
@@ -154,6 +157,11 @@ downloadQr.addEventListener('click',()=>{
     }
 })
 
+sharer.addEventListener('click',()=>{
+    const sharelink = copyText;
+    const tweet = `https://twitter.com/intent/tweet?url=${encodeURIComponent(sharelink)}&text=${encodeURIComponent("Created using Shorto")}`;
+    window.open(tweet, "_blank");
+})
 
 //backBtn.addEventListener('click', () => {})
 
