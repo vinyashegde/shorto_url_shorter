@@ -13,6 +13,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A open source Chrome Extension which shortens your urls in one click with a QR code!
+
 🔒 Your Privacy is Our Priority - No Unnecessary Permissions or User Tracking with Our 
 
 > This extension allows users to easily shorten long URLs when browsing the web.
