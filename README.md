@@ -27,7 +27,7 @@ Simply click on the extension icon, paste in a long URL, and the extension will 
 
 > **Automatic URL Shortening**
 
-> **Create, Copy, and Download QR Code** .
+> **Create, Copy, and Download QR Code**
 
 > **Selected Tab Link Copy Button** 
 
