@@ -1,33 +1,38 @@
-[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Source/logo.png)](https://chrome.google.com/webstore/detail/shorto-url-shorter/ggjlafhmjnmepkkihggbbgiignajkjcl?hl=en-GB&authuser=0)
+
+<p align="center">
+  <img src="https://github.com/vinyashegde/shorto_url_shorter/assets/46837876/d212810b-7c86-4e93-a755-d76063edf632" alt="Image Description">
+</p>
+
+<p align="center">
+  <img src="https://github.com/vinyashegde/shorto_url_shorter/assets/46837876/ac0f2443-2489-4f32-acb4-650f28560dae" alt="Image Description">
+</p>
+
+<!--[![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Source/logo.png)](https://chrome.google.com/webstore/detail/shorto-url-shorter/ggjlafhmjnmepkkihggbbgiignajkjcl?hl=en-GB&authuser=0)-->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-12+-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A open source Chrome Extension which shortens your urls in one click with a QR code!
+🔒 Your Privacy is Our Priority - No Unnecessary Permissions or User Tracking with Our 
 
-This extension allows users to easily shorten long URLs when browsing the web.
+> This extension allows users to easily shorten long URLs when browsing the web.
 Simply click on the extension icon, paste in a long URL, and the extension will generate a shortened version that can be shared more easily. The shortened URL will also redirect to the original URL when clicked. This extension is useful for sharing links on social media or through messaging apps, where space is limited. It can also be used to obscure the original URL for privacy reasons. Overall, this extension offers a convenient way to streamline the process of sharing links online.
 
-## Description
+## 🚀 Features
 
- Create and share short links on one click  
- 
-🔒Everything is safe - We don't ask for unnecessary permissions or track the users while using the extension :) 
+> **Custom API Key Support** 
 
-List of features available  
+> **Retrieve Link with Creation History** 
 
-• Custom API key Support 
+> **Automatic URL Shortening**
 
-• Retrieve link with creation history
+> **Create, Copy, and Download QR Code** .
 
-• Automatic URL shorten on one click
+> **Selected Tab Link Copy Button** 
 
-• Create, Copy and Download QR Code
-
-• Selected tab link copy button
-
-• Invoke the extension using keyboard shortcuts - `Ctrl+Shift+S` on Windows and `Command+Shift+S` on Mac
-
+> **Keyboard Shortcuts:** 
+  > Windows: `Ctrl+Shift+S`
+  > Mac: `Command+Shift+S`
 
 
 ## Downloads
@@ -40,121 +45,39 @@ List of features available
 
 [![](https://raw.githubusercontent.com/vinyashegde/shorto_url_shorter/main/Readme/Get%20It%20(4).png)](https://addons.opera.com/en/extensions/details/shorto-url-shorter)
 
+## 💻 Languages and Libraries Used
 
-## Languages and Libraries Used
+- HTML, JavaScript, CSS
+- [**Spectre.css**](https://picturepan2.github.io/spectre): A lightweight and responsive CSS framework. 🎨
+- [**FileSaver.js**](https://github.com/eligrey/FileSaver.js): A JavaScript library that provides a convenient way to save files on the client side. 💾
+- [**qrcode.js**](https://davidshimjs.github.io/qrcodejs): A library for generating QR codes in JavaScript. 📷
+- [**t.ly (API)**](https://t.ly/): An API for URL shortening. 🌐
 
-• HTML
 
-• CSS
 
-• Javascript
+# 🚀 Contributing Guidelines
 
-• [**Spectre.css**](https://picturepan2.github.io/spectre)
+Welcome to our open-source project! We appreciate all contributions. 🙌
 
-• [**FileSaver.js**](https://github.com/eligrey/FileSaver.js)
+## 💡 Submitting Contributions
 
-• [**qrcode.js**](https://davidshimjs.github.io/qrcodejs)
+1. Check for existing issues or create new ones.
+2. Every change should have an associated issue. 📝
+3. Include screenshots in your pull request and link it to the issue using `Closes #issue-number`. 🖼️
 
-# Contributing Guidelines
+## 🛠️ Getting Started
 
-This documentation contains a set of guidelines to help you during the contribution process. 
-We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember,
-**no contribution is too small.**
+To contribute:
 
-# Submitting Contributions👩‍💻👨‍💻
+1. **Fork** [this repository](https://github.com/vinyashegde/shorto_url_shorter.git). 🍴
+2. **Clone** your forked repository to your local machine. 🖥️
+3. Add a reference (remote) to the original repository.
+4. Periodically, update your main branch with changes from the main project. 🔄
+5. Create a new branch for your work. 🌿
+6. Make and commit your changes. ✅
+7. Push your changes to your remote branch. 🚀
+8. Create a pull request with a clear title and description. 📢
 
-Below you will find the process and workflow used to review and merge your changes.
+Thank you for contributing! 🎉
 
-## Steps
 
-- Take a look at the Existing Issues or create your **own** Issues!
-- Note : Every change in this project should/must have an associated issue. 
-- While creating pull request do remember to add screenshots of your work. Also link your pull request to the issue by `Closes #issue-number` .
-
-# Basics of Git and GitHub
-
-Below are the steps to follow to contribute to this project:
-
-**1.** Fork [this](https://github.com/vinyashegde/shorto_url_shorter.git) repository.
-
-**2.** Clone your forked copy of the project.
-
-```
-git clone https://github.com/<your_user_name>/shorto_url_shorter.git
-```
-
-where `your_user_name` is your GitHub username.
-
-**3.** Navigate to the project directory.
-
-```
-cd shorto_url_shorter
-```
-
-**4.** Add a reference(remote) to the original repository.
-
-```
-git remote add upstream https://github.com/vinyashegde/shorto_url_shorter.git
-```
-
-**5.** Check the remotes for this repository.
-
-```
-git remote -v
-```
-
-**6.** Always take a pull from the upstream repository to your main branch to keep it as par with the main project(updated repository). Feel free to raise new issues.
-
-```
-git pull upstream main
-```
-
-**7.** Create a new branch.
-
-```
-git checkout -b <your_branch_name>
-```
-
-**8.** Make necessary changes and commit those changes
-
-**9.** Track your changes.
-
-```
-git add .
-```
-```
-git status
-```
-
-**10.** Commit your changes .
-
-```
-git commit -m "bla bla bla"
-```
-
-**11.** Push the committed changes in your feature branch to your remote repo.
-
-```
-git push -u origin <your_branch_name> 
-```
-
-**12.** To create a pull request, click on `Compare & pull request`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
-
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
-
-**14.** Click on `Create pull request`.
-
-**15.** And you are done creating a pull request to this project. Be patient while your PR is reviewed.
-
-Happy Coding! 
-
-## Privacy Policy
-
-Privacy Policy Information We Collect We collect personal information in order to provide you with a better use of our website. Anonymous information such as the number of your link clicks, page views, and login times may also be collected to help us enhance your overall experience. 
-
-We may store your personal information in an aggregate format or in an identifiable format. How We Collect Information Information You Provide to Us. When you use our website services, we may collect information provided to us when you use our website. 
-
-Files which are Uploaded When you use Hopebest services, your files are uploaded to our web server to be processed. These files are automatically deleted within 1 hour and the files which are uploaded are NOT kept at all after 1 hour. You retain all ownership and rights to the files which are uploaded to our servers and our service only helps you to processing your files. 
-
-Automatically Captured Information. We automatically collect information sent to us by your operating device when you use our Services. The information sent to us may include your IP address, data about the pages you access, mobile network information, search history, and a time-stamp. 
-Through the content of our undeleted cookies, we may also collect information regarding the devices connected to your computer, software installed upon, and referring website addresses. 
