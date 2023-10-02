@@ -32,7 +32,7 @@
         #qrcode {
             padding: 8px;
             display: flex;
-            justify-content: center;                
+            justify-content: center;
         }
         #qrcode > img{
             height: 200px;
@@ -44,7 +44,7 @@
 
         .card-header{
             background-color: #C8D4FF;
-            border: 2px solid black; 
+            border: 2px solid black;
             /* border-radius: 12px; */
             margin-bottom: 7px;
         }
@@ -78,12 +78,15 @@
         color: #172A8C;
         transition: 0.3s ease-in;
         }
+        #expiry-count {
+            display: none;
+        }
         #shortSelTab{
             border-radius: 10px;
             padding: 1px 8px;
         }
         #shortURL{
-            border-radius: 10px; 
+            border-radius: 10px;
             padding: 1px 5px;
         }
         #darkmode{
@@ -106,9 +109,10 @@
             color: #000F46;
             margin-left: 2px;
         }
-        #github-icon{
-            margin-bottom: -10px;
-            margin-left: 10px;
+        .container {
+          display: flex;
+          justify-content: space-between;
+          padding: 0px 15px 0px 15px;
         }
         #downloadQr{
             border-radius: 10px;
@@ -135,13 +139,17 @@
                 <a href="options.html"><button class="btn btn-sm" class="btn btn-action" id="shortbut"><i class="icon icon-menu"></i></button></a>
                 </div>
                 <div class="card-title h5">Shorto - URL Shorter</div>   </div>
-                <div>
-                     <iframe src="https://ghbtns.com/github-btn.html?user=vinyashegde&repo=shorto_url_shorter&type=star&count=true" frameborder="0" scrolling="0" width="120" height="20" title="GitHub" id="github-icon"></iframe>           
+                <div class="container">
+                     <iframe src="https://ghbtns.com/github-btn.html?user=vinyashegde&repo=shorto_url_shorter&type=star&count=true" frameborder="0" scrolling="0" width="120" height="20" title="GitHub" id="github-icon"></iframe>
+                     <img src="off-button.png" id="toggleBtn" width="32" height="32" style="cursor: pointer;"/>
             </div>
-     
+
             <div class="card-body">
                 <div class="form-group">
                     <input class="form-input" type="text" id="myurl"placeholder="Enter URL">
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="text" id="expiry-count"placeholder="View Expiry Count">
                 </div>
             </div>
             <div class="card-footer">
@@ -156,17 +164,17 @@
             <div style="float:bottom;" class="toast toast-success d-hide" id="downloadedQr">Downloading QR!</div>
         </div>
         <!-- Option to Copy or Download QR code to clipboard -->
-        
+
         <div id="qrcode" class="qr d-hide"></div>
-        
+
         <div class="px-2 m-2" >
             <button class="btn btn-primary d-hide " id="share">Share</button>
             <button class="btn btn-primary d-hide " id="copyQr">Copy QR</button>
             <button class="btn btn-primary d-hide " id="downloadQr">Download QR</button>
         </div>
-        
+
     </div>
-   
+
 
 </body>
 

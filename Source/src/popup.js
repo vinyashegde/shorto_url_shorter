@@ -7,6 +7,7 @@ let copiedQr = document.querySelector("#copiedQr");
 let downloadedQr = document.querySelector("#downloadedQr");
 let share = document.querySelector("#share");
 let api = document.querySelector("#myurl")
+let expiryCount = document.querySelector("#expiry-count")
 let toastError = document.querySelector('.toast-error')
 let toastSuccess = document.querySelector('.toast-success')
 let loader = document.querySelector('.loading')
@@ -16,6 +17,8 @@ const copyQr = document.getElementById("copyQr")
 const downloadQr = document.getElementById("downloadQr")
 const sharer = document.getElementById("share")
 var qrcode = new QRCode(codeDiv);
+const toggleBtn = document.querySelector("#toggleBtn");
+let viewCountEnabled = false;
 
 
 const resultDiv = document.getElementById('result');
@@ -36,7 +39,7 @@ function urlValidate(url) {
     return regex.test(url);
   }
 
-  
+
 
 generateBtn.addEventListener('click', () => {
     shortenUrl(api.value)
@@ -49,7 +52,7 @@ generateSelTabBtn.addEventListener('click', () => {
 })
 
 // // Display the shortened URLs in the history table
-      
+
 // shortenedUrls.slice(-3).reverse().forEach(urlPair => {
 //     const row = document.createElement('tr');
 //     row.innerHTML = `<td><a href="${urlPair[1]}" target="_blank">${urlPair[1]}</a></td><td><a href="${urlPair[0]}" target="_blank">${urlPair[0].substring(0,22) + String("...")}</a></td>`;
@@ -64,7 +67,8 @@ function shortenUrl(longURL) {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify({
-                    "long_url": longURL, 
+                    "long_url": longURL,
+                    "expire_at_views": validateExpiryCount(expiryCount.value),
                     "domain": "https://t.ly/",
                     "api_token": result.API
                 })
@@ -88,26 +92,26 @@ function shortenUrl(longURL) {
                     document.execCommand("copy");
                     document.body.removeChild(dummy);
 
-                    
+
                     // Add the shortened URL to the history list and local storage
                     const urlPair = [longURL, json.short_url];
                     shortenedUrls.push(urlPair);
                     shortenedUrls = shortenedUrls.slice(-3).reverse();
                     localStorage.setItem(storageKey, JSON.stringify(shortenedUrls));
 
-                    
+
                     qrcode.makeCode(copyText);
                     codeDiv.classList.remove('d-hide')
                     downloadQr.classList.remove('d-hide')
                     copyQr.classList.remove('d-hide')
                     share.classList.remove('d-hide')
-                    
+
                 })
                 .catch(err => { alert(err) })
         });
     } else {
         toastError.classList.remove('d-hide')
-        
+
         setTimeout(() => {
             toastError.classList.add('d-hide')
         }, 1500)
@@ -123,7 +127,7 @@ async function copyQrfunc(){
     const imgQr= document.querySelector('div.qr img')
     const data=await fetch(imgQr.src);
     const blob = await data.blob();
-    
+
     try{
         await navigator.clipboard.write([
             new ClipboardItem({
@@ -162,6 +166,28 @@ sharer.addEventListener('click',()=>{
     const tweet = `https://twitter.com/intent/tweet?url=${encodeURIComponent(sharelink)}&text=${encodeURIComponent("Created using Shorto")}`;
     window.open(tweet, "_blank");
 })
+
+const validateExpiryCount = (expiryCount) => {
+    if(expiryCount && +expiryCount < 1) {
+        return '1';
+    }
+    return expiryCount;
+}
+
+const toggleViewCount = () => {
+  viewCountEnabled = !viewCountEnabled;
+  const img = document.querySelector(".container > img");
+  const viewCountInput = document.querySelector("#expiry-count");
+  if(viewCountEnabled){
+    img.src = "on-button.png";
+    viewCountInput.style.display = "block";
+  }else{
+    img.src = "off-button.png";
+    viewCountInput.style.display = "none";
+  }
+}
+
+toggleBtn.addEventListener('click', toggleViewCount);
 
 //backBtn.addEventListener('click', () => {})
 
