@@ -59,6 +59,7 @@ Simply click on the extension icon, paste in a long URL, and the extension will 
 # 🚀 Contributing Guidelines
 
 Welcome to our open-source project! We appreciate all contributions. 🙌
+For deailted step by step go to [Contributing.md](https://github.com/vinyashegde/shorto_url_shorter/blob/main/CONTRIBUTING.md)
 
 ## 💡 Submitting Contributions
 
