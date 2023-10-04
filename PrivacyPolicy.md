@@ -2,15 +2,15 @@
 
 ## Privacy Policy Overview
 
-At **Our Website**, we highly value your privacy and strive to offer you the best user experience possible. To achieve this, we collect various types of information, both personal and anonymous, as detailed below:
+At **Shorto**, we highly value your privacy and strive to offer you the best user experience possible. To achieve this, we collect various types of information, both personal and anonymous, as detailed below:
 
 ### 📝 Personal Information Collection
 
-We gather personal information with the sole purpose of enhancing your experience on our website. This information may include data such as your name, email address, and any other details you provide while using our services.
+We gather personal information with the sole purpose of enhancing your experience on our extension. This information may include data such as your name, email address, and any other details you provide while using our services.
 
 ### 🌐 Anonymous Information Collection
 
-In addition to personal data, we also collect anonymous information, which cannot be traced back to any individual user. This data comprises statistics like the number of link clicks, page views, and login times. We use this anonymous data to improve and optimize our website, making it more user-friendly.
+In addition to personal data, we also collect anonymous information, which cannot be traced back to any individual user. This data comprises statistics like the number of link clicks, page views, and login times. We use this anonymous data to improve and optimize our extension, making it more user-friendly.
 
 ### 💾 Storage of Personal Information
 
@@ -18,11 +18,11 @@ Your personal information may be stored in two formats: aggregate or identifiabl
 
 ### 🖋️ Information You Provide
 
-When you utilize our website services, we collect data that you voluntarily provide during your interaction with our platform. This may include information entered in forms or during registration.
+When you utilize our extension services, we collect data that you voluntarily provide during your interaction with our platform. This may include information entered in forms or during registration.
 
 ### 📂 File Uploads
 
-For users of Our Website services, any files you upload to our web server are used solely for processing purposes. Rest assured, these files are automatically deleted within one hour, and we do not retain copies after this period. You maintain full ownership and rights over the files you upload, with our service assisting in their processing.
+For users of Our Extension services, any files you upload to our web server are used solely for processing purposes. Rest assured, these files are automatically deleted within one hour, and we do not retain copies after this period. You maintain full ownership and rights over the files you upload, with our service assisting in their processing.
 
 ### 🤖 Automated Information Capture
 
