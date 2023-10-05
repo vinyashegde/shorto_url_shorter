@@ -179,10 +179,14 @@ const toggleViewCount = () => {
   const img = document.querySelector(".container > img");
   const viewCountInput = document.querySelector("#expiry-count");
   if(viewCountEnabled){
-    img.src = "on-button.png";
+    img.src = "eye-solid.svg";
+    img.style.width = "20px"; 
+    img.style.height = "20px";
     viewCountInput.style.display = "block";
   }else{
-    img.src = "off-button.png";
+    img.src = "eye-slash-solid.svg";
+    img.style.width = "20px"; 
+    img.style.height = "20px";
     viewCountInput.style.display = "none";
   }
 }
